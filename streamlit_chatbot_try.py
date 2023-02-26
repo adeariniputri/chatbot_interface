@@ -7,6 +7,7 @@ from tensorflow.python.framework import ops
 import random
 import json
 from tflearn.optimizers import Adam
+#from tensorflow.keras.optimizers.legacy import Adam
 import jsonify
 import streamlit as st
 from streamlit_chat import message
