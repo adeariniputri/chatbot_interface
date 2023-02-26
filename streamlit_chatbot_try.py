@@ -24,10 +24,10 @@ net = tflearn.fully_connected(net, 8, activation="softmax")
 adam = Adam(learning_rate=0.001, beta1=0.99)
 net = tflearn.regression(net, optimizer=adam)
 model = tflearn.DNN(net)
-model.load('saved_model/model.tflearn')
+model.load('saved_model/models1/model1.tflearn')
 print(model)
 
-with open('intents.json') as file:
+with open('knowledge.json') as file:
 	data = json.load(file)
 
 labels = []

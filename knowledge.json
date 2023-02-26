@@ -1,0 +1,51 @@
+{
+    "knowledge": [{
+            "tag": "intro",
+            "patterns": ["kamu siapa", "nama", "siapa", "perkenalkan", "kamu?", "who are you"],
+            "responses": ["Aku adalah AIBot", "Namaku AIBot", "Aku AIBot"],
+            "context_set": ""
+        },
+        {
+            "tag": "open",
+            "patterns": ["Halo", "halo", "test", "assalamualaikum", "Assalamualaikum", "hi", "hai", "oi"],
+            "responses": ["Halo Human! Selamat Datang", "Waalaikumsalam", "Halo! Ada yang bisa dibantu?", "Halo! iya dengan AIBot disini"],
+            "context_set": ""
+        },
+        {
+            "tag": "close",
+            "patterns": ["ok sudah selesai", "terimakasih", "close", "ok", "yaudah", "yasudah", "oh, ok"],
+            "responses": ["Terimakasih telah menghubungi kami!", "Semoga jawaban kami dapat membantu"],
+            "context_set": ""
+        },
+        {
+            "tag": "hours",
+            "patterns": ["Office AIBot buka jam berapa?", "Jam konsultasi?", "layanan kapan?", "jam layanan?", "waktu layanan?", "waktu kunjung?", "AIBot aktif kapan?"],
+            "responses": ["Halo semua, dengan AIBot disini silahkan konsultasi layanan kami aktif 24 hours untuk senin-jumat"],
+            "context_set": ""
+        },
+        {
+            "tag": "address",
+            "patterns": ["lokasi dimana?", "lokasi dimana", "lokasi dimana?", "alamat kantor AIBot?", "dimana officenya?", "shareloc"],
+            "responses": ["Silahkan berkunjung di Jalan Pembangunan A5 Ujung, Kota Bandar Lampung"],
+            "context_set": ""
+        },
+        {
+            "tag": "service",
+            "patterns": ["servicenya apa aja?", "servicenya bergerak dibidang apa?", "berapa banyak service", "service nya ada yang open source?", "berapa service"],
+            "responses": ["Halo ka, saat ini service di AIBot ada 5, yaitu : Computer Vision, NLP, Data Analytics, Data Analyst, dan Chatbot, khusus untuk Chatbot bisa digunakan secara open source"],
+            "context_set": ""
+        },
+        {
+            "tag": "career",
+            "patterns": ["bagaimana karir di AIBot?", "sedang open apa aja?", "bagaimana culturenya", "info karir"],
+            "responses": ["Halo ka, saat ini AIBot sedang Open Positions untuk Role Engineering, Product team dan AI Team, untuk culture nya kami startup enviroment, lebih detailnya kunjungi AIBot.id"],
+            "context_set": ""
+        },
+        {
+            "tag": "bug",
+            "patterns": ["ada bug di service comvis", "bagaimana cara mengatasi bug", "terdapat problem", "service bermasalah"],
+            "responses": ["Hi ka, terimakasih sudah memberikan feedback, untuk service yang bermasalah kami akan handle dengan cepat"],
+            "context_set": ""
+        }
+    ]
+}
