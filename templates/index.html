@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h4 class="jumbotron text-center" style="padding: 2rem; font-family: 'Helvetica'; font-weight: bolder;">Chatbot FAQ Universitas XYZ</h4>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="card bg-white mt-0">
+                        <div class="card-body">
+                            <div id="chatbox">
+                            </div>
+                            <div id="userInput">
+                                <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here" style="font-size: 2rem;">
+                                <br>
+                                <input id="buttonInput" class="btn btn-success form-control" type="submit" value="Send" style="font-size: 2rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+
+            <script>
+                function getResponse() {
+                    let userText = $("#textInput").val();
+                    let userHtml = '<div class="user" style="float:right; font-family: Helvetica; font-weight: 400"><h6 style="font-family: Helvetica; font-weight: bold">request</h6><p class="userText"><span>' + userText + '</span></p></div>';
+                    $("#textInput").val("");
+                    $("#chatbox").append(userHtml);
+                    document.getElementById('userInput').scrollIntoView({
+                        block: 'start',
+                        behavior: 'smooth'
+                    });
+                    $.get("/get", {
+                        msg: userText
+                    }).done(function(data) {
+                        var botHtml = '<br><br><br><hr><div class="bot" style="font-family: Helvetica; font-weight: 400"><h6 style="font-family: Helvetica; font-weight: bold">response-ai</h6><p class="botText"><span>' + data + '</span></p></div>';
+                        $("#chatbox").append(botHtml);
+                        document.getElementById('userInput').scrollIntoView({
+                            block: 'start',
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+                $("#textInput").keypress(function(e) {
+                    if (e.which == 13) {
+                        getResponse();
+                    }
+                });
+                $("#buttonInput").click(function() {
+                    getResponse();
+                });
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

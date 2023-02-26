@@ -1,0 +1,38 @@
+{"intents": [
+    {"tag": "salam",
+     "patterns": ["Halo", "Assalamu'alaikum", "??", "hai", "oi","hola","hi","?","p","ppp","halo min","min mau nanya","nanya","tanya","tanya dong","min","halo kak","halo..","hai, mau tanya"],
+     "responses": ["Halo! Selamat Datang", "Waalaikumsalam kak", "Halo! Ada yang bisa dibantu?"],
+     "context_set": ""
+    },
+    {"tag": "penutup",
+     "patterns": [ "ok", "yaudah", "yawes", "oh, ok","ho","okdeh","yah", "hm","oke terimakasih ya jawabannya","ok makasi","ok makasih","ok Makasih ya kak","makasih kak","thankyou","thank you ka","tysm"],
+     "responses": ["Terimakasih telah menghubungi kami!", "Semoga jawaban kami dapat membantu"],
+     "context_set": ""
+    },
+    {"tag": "jam",
+     "patterns": ["buka jam berapa?", "Jam konsultasi?","layanan kapan?", "jam layanan?", "waktu layanan?", "waktu kunjung?","jam buka","buka jam","bukanya jam brp?","buka jam brp min?","min buka jam brp ya?","ini jam buka kapan?"],
+     "responses": ["Silahkan berkunjung untuk melakukan konsultasi pada jam layanan 08.00-17.00 Senin-Jum'at"],
+     "context_set": ""
+    },
+    {"tag": "alamat",
+     "patterns": ["lokasi?", "lokasi dimana?", "alamat kantor?", "dimana?", "shareloc","loc","lokasi","alamat","alamat univ","alamat fakultas","mau nanya alamat","alamat dong","alamat dong min","miiin tanyaa alamaat","alamat mana woi","woi alamat", "nanya alamat"],
+     "responses": ["Lokasi kami berada di Jl semangka No 17"],
+     "context_set": ""
+    },
+    {"tag": "fakultas",
+     "patterns": ["fakultas apa saja?", "jumlah fakultas?", "berapa fakultas?", "nama-nama fakultas?","fakultas", "fakultas disini apa aja yak?", "nanya fakultas", "fakultas min", "nanya nanya fakultas dong min", "min, fakultas", "halo disini fakultasnya apa saja ya?","halo mau tanya fakultas"],
+     "responses": ["Fakultas kami berjumlah 6 yaitu : fakultas ekonomi, hukum, teknik, matematika dan IPA, kedokteran, dan ilmu politik"],
+     "context_set": ""
+    },
+    {"tag": "jurusan",
+     "patterns": ["Jurusan apa saja?", "jumlah jurusan?", "berapa jurusan?", "info jurusan","apa aja jurusannya","info jurusan dong ka","halo mau tanya jurusan kak","jurusannya apa aja ya","disini ada berapa jurusan"],
+     "responses": ["Untuk mengetahui lebih lanjut, silahkan kunjungi jurusan.net"],
+     "context_set": ""
+    },
+    {"tag": "pendaftaran",
+     "patterns": ["Pendaftaran buka kapam?", "Pendaftaran mulai kapan?", "daftar kapan?", "info pendaftaran","pendaftaran","info tentang pendaftaran dong ka","daftar dimana","kalo mau daftar dimana?","cara daftar"],
+     "responses": ["Pendaftaran dibuka pada 32 Februari 2050. Untuk mengetahui lebih lanjut silahkan kunjungi pendaftaran.net"],
+     "context_set": ""
+    }
+]
+}
