@@ -1,0 +1,8 @@
+nltk==3.8
+Sastrawi==1.0.1
+numpy==1.24.0
+tflearn==0.5.0
+tensorflow==2.11.0
+jsonify==0.5
+streamlit==1.19.0
+streamlit-chat==0.0.2.1
